@@ -1,0 +1,430 @@
+﻿@charset "utf-8";
+
+/* CSS Document */
+
+.side,
+.main {
+    padding: 1em;
+}
+
+.innerhtml {
+    line-height: 200%;
+}
+
+.content {
+    padding: 3em 0;
+}
+
+
+/*nav*/
+
+#header {
+    padding-top: 10px;
+    transition: .3s;
+    background: #fff;
+}
+
+#header .page {
+    padding: 0;
+}
+
+
+/*default use*/
+
+.d-area {
+    background: url("image/page-1-acknowledgement.png") top center no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 160px 0 200px 0;
+}
+
+.d-area2 {
+    font-size: 35px;
+}
+
+.d-area2 .page {
+    max-width: 1200px;
+}
+
+.d-area2 .location {
+    margin-top: -1.5em;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.d-area2 h4 {
+    font-weight: normal;
+    margin: 0;
+}
+
+.d-area2 ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.d-area2 ul li:nth-child(1) a {
+    background: #8a82cc;
+}
+
+.d-area2 ul li:nth-child(2) a {
+    background: #ffa782;
+}
+
+.d-area2 ul li:nth-child(3) a {
+    background: #f5d005;
+}
+
+.d-area2 ul li:nth-child(4) a {
+    background: #559ac8;
+}
+
+.d-area2 ul li a {
+    color: #fff;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+}
+
+.d-area2 ul li a:hover {
+    background: #000;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.d-area3 .page {
+    max-width: 1200px;
+}
+
+.d-area3 {
+    padding: 3em 0;
+}
+
+.pagelist {
+    text-align: center;
+}
+
+.pagelist ul {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.pagelist li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 1em;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.pagelist li:hover {
+    color: #559ac8;
+}
+
+.pagelist li.full {
+    color: #ccc;
+}
+
+.pagelist li.inthis {
+    color: #559ac8;
+    font-weight: bold;
+}
+
+
+/*content*/
+
+select {
+    background: rgba(255, 255, 255, 0.6);
+    font-family: '微軟正黑體';
+    font-size: 35px;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.select {
+    position: relative;
+    display: block;
+}
+
+.select:after {
+    content: "▼";
+    padding: 20px 8px;
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+h1.subject {
+    font-size: 24px;
+}
+
+h1.tit {
+    font-size: 80px;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 160px;
+    font-weight: normal;
+}
+
+#hotellist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#count {
+    margin: 1em;
+}
+
+#count span {
+    font-weight: bold;
+    font-size: 25px;
+    color: #559ac8;
+}
+
+
+/*list*/
+
+.list {
+    padding: 1em;
+    opacity: 0;
+    transition: .5s;
+    transition-timing-function: ease-in-out;
+    margin-top: 2em;
+}
+
+.list.in {
+    opacity: 1;
+    margin-top: 0;
+}
+
+.list h3 {
+    font-weight: normal;
+    margin: 0;
+    color: #226EB5;
+}
+
+.list a {
+    width: 100%;
+    diaplay: block;
+    float: left;
+    color: #666;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+}
+
+.list a:hover {
+    color: #014283;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.list figure img {
+    transition: .3s;
+    position: absolute;
+    top: -90px;
+}
+
+.list a:hover figure img {
+    transform: scale(1.05, 1.05);
+}
+
+.list a:hover div {
+    color: #333;
+}
+
+.list a:hover p.more {
+    color: #f00;
+}
+
+.list a:hover figcaption {
+    opacity: 1;
+}
+
+.list figure {
+    diaplay: block;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    max-height: 310px;
+    height: 310px;
+}
+
+.list figure h4 {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    font-size: 35px;
+    font-weight: normal;
+    background: linear-gradient(rgba(255, 255, 255, 0) 20%, rgba(0, 0, 0, 0.5));
+    margin: 0;
+    padding: 2em 1em 1em 1em;
+}
+
+.list .hotelinfo {
+    padding: 1em;
+    font-size: 25px;
+}
+
+.list .hotelinfo img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.list .hotelinfo .col-6 {
+    margin: 0;
+}
+
+.list .hotelinfo li {
+    vertical-align: middle;
+    list-style: none;
+    padding: 0 0 0 1.7em;
+    line-height: 200%;
+}
+
+.list .hotelinfo ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list .hotelinfo li:nth-child(1) {
+    background: url("./image/icon-clock.jpg") no-repeat;
+    min-width: 100%;
+    background-position: 0px 5px;
+}
+
+.list .hotelinfo li:nth-child(2) {
+    background: url("./image/icon-map.jpg") no-repeat;
+    min-width: 100%;
+    background-position: 0px 5px;
+}
+
+.list .hotelinfo li:nth-child(3) {
+    padding: 0;
+    width: 50%;
+}
+
+.list .hotelinfo li:nth-child(4) {
+    padding: 0;
+    width: 50%;
+    text-align: right;
+}
+
+
+/*footer*/
+
+.footer {
+    background: #559ac8;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    padding: 1em 0;
+}
+
+.footer p:nth-child(2) {
+    color: #ffd366;
+}
+
+@media screen and (max-width:1280px) {
+    /*desktop*/
+    .logo {
+        padding-top: 0.5em;
+    }
+    .page {
+        padding: 0 3%;
+    }
+    .d-area2 ul li a {
+        padding: 0.5em;
+    }
+    h1.tit {
+        padding-bottom: 50px;
+    }
+    .list figure {
+        height: 156px;
+    }
+    .list figure h4 {
+        font-size: 25px;
+    }
+    .list .hotelinfo li:nth-child(3) {
+        width: 100%;
+    }
+    .list .hotelinfo li:nth-child(4) {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:960px) {
+    /*desktop-small pad*/
+    .nav ul li a {
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+    }
+    .location ul {
+        margin: 1em 0;
+        padding: 0;
+    }
+    .d-area2 ul li a {
+        font-size: 25px;
+    }
+    .list figure img {
+        top: 0px;
+    }
+    .list figure {
+        height: 188px;
+    }
+    .list .hotelinfo {
+        font-size: 20px;
+    }
+    .list .hotelinfo img {
+        width: 20px;
+    }
+    .list .hotelinfo li:nth-child(1) {
+        background-size: 20px;
+        background-position: 0px 8px;
+    }
+    .list .hotelinfo li:nth-child(2) {
+        background-size: 20px;
+        background-position: 0px 8px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    /*phone*/
+    #header {
+        background: rgba(255, 255, 255, 0.7);
+    }
+    .nav ul li a {
+        color: #ccc;
+    }
+    .nav ul li {
+        border-bottom: 1px solid #666;
+    }
+    .page {
+        padding: 0 3%;
+    }
+    .list .hotelinfo li:nth-child(2) {
+        padding: 0 0 0 1.3em;
+    }
+    .list .hotelinfo li:nth-child(1) {
+        padding: 0 0 0 1.3em;
+    }
+    .d-area {
+        padding: 60px 0 200px 0;
+    }
+    .d-area2 .location {
+        padding: 0.5em;
+    }
+}
